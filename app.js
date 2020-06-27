@@ -7,7 +7,6 @@
     var readyAWS = false;
 
     // aws variables
-    //var lambda;
 
 
 	// Show the buttons
