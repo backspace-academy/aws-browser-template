@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Starter Template · Bootstrap</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row"><br></div>
+            <div class="row">
+                <h1 class="col text-center">BackSpace Academy</h1>
+            </div>
+            <div class="row">
+                <h2 class="col text-center">Browser Lab</h2>
+            </div>
+            <div class="row"><br></div>
+            <div class="row"><br>
+                <div id="buttonSection" class="col" style="display: none"><p>
+                    <button type="button" class="btn btn-warning btn-lg mx-2" data-toggle="modal" data-target="#signInModal">AWS Sign In &raquo;</button>
+                    <button id="btnSend" type="button" class="btn btn-info btn-lg mx-2">Send Command &raquo;</button>
+                </p></div>
+            </div>
+            <div class="row"><br>
+                <textarea class="form-control" id="outputBox" rows="10"></textarea>
+            </div>
+            <!-- Sign in Modal -->
+            <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="signInModalLabel">AWS Sign In</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                <label for="inputAccessID">Access key id</label>
+                                <input type="password" class="form-control" id="inputAccessID" placeholder="Enter access key id">
+                                </div>
+                                <div class="form-group">
+                                <label for="inputSecret">Secret</label>
+                                <input type="password" class="form-control" id="inputSecret" placeholder="Enter secret access key">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button id="btnSignIn" type="button" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bootstrap, and jQuery -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+            <!-- AWS SDK -->
+            <script src="https://sdk.amazonaws.com/js/aws-sdk-2.706.0.min.js"></script>
+            <!-- Application Code -->
+            <script src="app.js"></script>            
+        </div>      
+    </body>
+</html>
