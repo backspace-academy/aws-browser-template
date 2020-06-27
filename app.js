@@ -41,7 +41,6 @@
         if (readyAWS){
             msgOut("Sending command");
             // Instantiate aws sdk service objects now that the credentials have been updated.
-            //lambda = new AWS.Lambda();
                   
         }
     }    
